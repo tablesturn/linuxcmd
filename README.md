@@ -75,3 +75,12 @@ cryptsetup luksClose luksName
 ```
 
 `luksName` = luks mapper name
+
+# Gnome-specific
+
+## nm-connection-editor
+
+An advanced manager for network connections
+```console
+nm-connection-editor
+```
