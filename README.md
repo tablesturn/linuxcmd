@@ -84,3 +84,17 @@ An advanced manager for network connections
 ```console
 nm-connection-editor
 ```
+
+# Arch (Manjaro) specific
+
+## Install VMware Player
+
+### General installation instructions
+
+https://wiki.manjaro.org/index.php?title=VMware
+
+### Module compilation (on kernel 5.4, maybe others too)
+
+https://communities.vmware.com/thread/623768
+
+https://github.com/mkubecek/vmware-host-modules
