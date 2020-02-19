@@ -98,3 +98,6 @@ https://wiki.manjaro.org/index.php?title=VMware
 https://communities.vmware.com/thread/623768
 
 https://github.com/mkubecek/vmware-host-modules
+
+### Fix wrong mirrors (No module named 'pacman_mirrors' when running pacman-mirrors)
+No module named 'pacman_mirrors'
