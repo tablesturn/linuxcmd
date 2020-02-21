@@ -34,6 +34,12 @@ Lists all available block devices (hard drives, usb sticks etc.) and shows their
 lsblk
 ```
 
+## Write (iso) disk image to USB stick with progress
+
+```console
+dd if=/path/to/iso of=/dev/sdXY bs=4M status=progress
+```
+
 ## mount
 
 Mounts a partition to a existing directory
