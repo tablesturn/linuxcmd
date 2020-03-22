@@ -128,5 +128,22 @@ https://communities.vmware.com/thread/623768
 
 https://github.com/mkubecek/vmware-host-modules
 
-### Fix wrong mirrors (No module named 'pacman_mirrors' when running pacman-mirrors)
-No module named 'pacman_mirrors'
+# Kubernetes
+
+## Kubernetes Dashboard
+
+### Access via remote ssh (e.g. terminal-only server)
+
+Activate the web-ui access on the k8s machine
+```console
+kubectl proxy
+```
+
+Create SSH tunnel to the k8s machine
+```console
+ssh -L 8001:localhost:8001 user@remote-ip
+```
+
+Access web-ui via
+
+http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
