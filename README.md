@@ -151,3 +151,11 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 For older versions, use
 
 http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#/login
+
+# Proxmox
+
+## Proxmox with systemd boot (used instead of grub for zfs boot)
+
+### Editing kernel boot parameters
+
+https://pve.proxmox.com/pve-docs/chapter-sysadmin.html#sysboot_edit_kernel_cmdline
