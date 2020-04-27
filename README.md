@@ -1,5 +1,7 @@
 A collection of useful linux commands
 
+Do not copy and paste anything in the shell without understanding it!
+
 # General
 
 # File management
@@ -123,6 +125,16 @@ https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-g
 https://wiki.manjaro.org/index.php?title=VMware
 
 ### Module compilation (on kernel 5.4, maybe others too)
+
+```console
+git clone https://github.com/mkubecek/vmware-host-modules.git
+cd vmware-host-modules
+git checkout workstation-15.5.1
+sudo make
+sudo make install
+
+sudo vmware-modconfig --console --install-all
+```
 
 https://communities.vmware.com/thread/623768
 
