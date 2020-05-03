@@ -171,3 +171,9 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 ### Editing kernel boot parameters
 
 https://pve.proxmox.com/pve-docs/chapter-sysadmin.html#sysboot_edit_kernel_cmdline
+
+## Image files location
+
+```console
+/var/lib/vz/images
+```
