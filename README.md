@@ -175,5 +175,5 @@ https://pve.proxmox.com/pve-docs/chapter-sysadmin.html#sysboot_edit_kernel_cmdli
 ## Image files location
 
 ```console
-/var/lib/vz/images
+/var/lib/vz/template/iso
 ```
