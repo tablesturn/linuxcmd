@@ -140,6 +140,28 @@ https://communities.vmware.com/thread/623768
 
 https://github.com/mkubecek/vmware-host-modules
 
+## Fix for BCM57780
+
+### Temporary fix (no need to reboot)
+
+```console
+sudo modprobe -r tg3
+sudo modprobe broadcom
+sudo modprobe tg3
+```
+
+### Permanent fix
+
+Add broadcom and tg3 (in this order) to the MODULES array:
+
+/etc/mkinitcpio.conf
+
+MODULES=(.. broadcom tg3 ..)
+
+Regenerate the initramfs
+
+https://wiki.archlinux.org/index.php/Network_configuration/Ethernet#Broadcom_BCM57780
+
 # Kubernetes
 
 ## Kubernetes Dashboard
